@@ -1,0 +1,976 @@
+/* =============================== font links css part start ================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap');
+/* -------------------------------- font links css part end ------------------------------------ */
+/* =============================== variable css part start ================================== */
+:root{
+    --poppins:'Poppins', sans-serif;
+    --nunito: 'Nunito Sans', sans-serif;
+    --brand_colo: #007F5F;
+    --secundery_colo: #616161;
+    --prymary_colo:#1E1E1E;
+}
+
+/* -------------------------------- variable css part end ------------------------------------ */
+/* =============================== commom css part start ================================== */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+.common_head h2{
+    width: 507px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--prymary_colo);
+}
+.common_head p{
+    width: 516px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--secundery_colo);
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* -------------------------------- commom css part end ------------------------------------ */
+/* =============================== back to top button css part start ================================== */
+.top_button{
+    width: 50px;
+    height: 50px;
+    background: var(--brand_colo);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    z-index: 999;
+    bottom: 10%;
+    right: 4%;
+    visibility: hidden;
+    transition: all linear .3s;
+}
+.janina{
+    visibility: visible;
+    animation: upore_aso 1s linear;
+}
+@keyframes upore_aso{
+    from{
+         bottom: -20%;
+         opacity: 0%;
+    }
+    to{
+         bottom: 10%;
+         opacity: 100%;
+    }
+}
+/* -------------------------------- back to top button css part end ------------------------------------ */
+/* =============================== menu css part start ================================== */
+.main_menu{
+    padding: 40px 0;
+}
+.main_menu ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: #616161 !important;
+}
+.main_menu .menu_botton a{
+    width: 150px;
+    height: 56px;
+    border-radius: 17px;
+    background: #007F5F;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: #fff;
+    line-height: 56px;
+    text-align: center;
+    border: 1px solid #363062;
+    transition: all linear .3s;
+}
+.main_menu .menu_botton a:hover{
+    background: transparent;
+    transform: scale(1.1);
+    color: black;
+}
+/* -------------------------------- menu css part end ------------------------------------ */
+/* =============================== banner css part start ================================== */
+#banner{
+    background: url('../images/banner.png');
+    padding-top: 147px;
+    padding-bottom: 122px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#banner::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.banner_text h1{
+    width: 573px;
+    font-size: 65px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: #fff;
+}
+.banner_text p{
+    width: 582px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.banner_button a{
+    width: 180px;
+    height: 56px;
+    background: #007F5F;
+    border-radius: 17px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: #fff;
+    text-align: center;
+    line-height: 56px;
+    transition: all linear .3s;
+}
+.banner_button a:hover{
+    background: #5272F2;
+    color: #363062;
+}
+.banner_options{
+    width: 687px;
+    padding: 24px 27px 24px 25px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+.option_icon{
+    color: var(--brand_colo);
+}
+.option_text h2{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--nunito);
+    color: #292929;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.option_head{
+    display: flex;
+}
+.option_input input{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--nunito);
+    color: var(--secundery_colo);
+    border: none; 
+    margin-top: 8px;
+    text-align: center;
+    padding-left: 5px;
+}
+.option_input input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--nunito);
+    color: var(--secundery_colo);
+}
+.banner_serch_button a{
+    width: 82px;
+    height: 82px;
+    border-radius: 10px;
+    background: var(--brand_colo);
+    color: #fff;
+    text-align: center;
+    line-height: 82px;
+}
+/* -------------------------------- banner css part end ------------------------------------ */
+/* =============================== Travel Benefit css part start ================================== */
+#Travel_part{
+    padding: 150px 0;
+}
+.Travel_benefit_head h2{
+    font-size: 40;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: #1E1E1E;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Travel_benefit_head p{
+    width: 692px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: #616161;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 113px;
+}
+.benefit_card{
+    width: 422px;
+    padding: 79px 77px 47px 44px;
+    border-radius: 14px;
+    transition: all linear .3s;
+    margin-bottom: 30px;
+}
+.benefit_card:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.benefit_card_icon{
+    width: 84px;
+    height: 78px;
+    padding: 17px 24px;
+    background: rgba(1, 133, 100, 0.10);
+    border-radius: 14px;
+}
+.benefit_card_head h3{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: var(--poppins);
+    color: #1E1E1E;
+    margin-top: 38px;
+    margin-bottom: 20px;
+}
+.benefit_card_head p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--secundery_colo);
+    line-height: 30px;
+}
+/* -------------------------------- Travel Benefit css part end ------------------------------------ */
+/* =============================== Popular Destination css part start ================================== */
+.popular_destination_head{
+    padding: 150px 0;
+}
+.popular_destination_head h2{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--prymary_colo);
+    text-align: center;   
+}
+.popular_destination_head p{
+    width: 699px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--secundery_colo);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;  
+}
+.destination_slider_item{
+    width: 370px;
+    padding: 21px 20px 42px 21px;
+}
+.destination_slider_image{
+    width: 329px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.slider_revew ul{
+    display: flex;
+    gap: 6px;
+    margin-top: 31px;
+    margin-bottom: 17px;
+}
+.slider_revew ul li i{
+    color: #FF8B00;
+}
+.slider_revew ul li p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: #FF8B00;
+}
+.slider_text h3{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--prymary_colo);
+}
+.slider_text p{
+    width: 325px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--secundery_colo);
+    margin: 20px 0;
+}
+.slider_text h4{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--Primary-Color);
+    margin-bottom: 30px;
+}
+.slider_text h4 span{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--Paragraph-Color);
+}
+.slider_button a{
+    width: 150px;
+    height: 48px;
+    border-radius: 17px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--brand_colo);
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid var(--brand_colo);
+    transition: all linear .3s;
+}
+.slick-center{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-bottom: 20px;
+    border-radius: 17px;
+}
+/* -------------------------------- Popular Destination css part end ------------------------------------ */
+/* ===============================  discover remember css part start ================================== */
+#discover_remember {
+    background: rgba(30, 30, 30, 0.05);
+    padding-top: 148px;
+    padding-bottom: 152px;
+}
+.discover_remember_head h2 {
+    width: 418px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--Primary-Color);
+}
+.discover_remember_head p {
+    width: 507px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--Paragraph-Color);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.discover_remember_list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.discover_remember_list ul li {
+    display: flex;
+    gap: 10px;
+}
+.discover_remember_list ul li i {
+    color: var(--brand_color);
+    font-size: 20px;
+}
+.discover_remember_list ul li p {
+    width: 338px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--Paragraph-Color);
+}
+.discover_remember_button a {
+    width: 189px;
+    height: 56px;
+    border-radius: 17px;
+    background: var(--brand_colo);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: #fff;
+    text-align: center;
+    line-height: 56px;
+    margin-top: 56px;
+    transition: all linear .3s;
+}
+.discover_remember_button a:hover {
+    background: transparent;
+    transform: scale(1.1);
+    color: black;
+}
+.counter_part {
+    align-items: center;
+}
+.counter_items {
+    gap: 30px;
+}
+.counter_item {
+    width: 270px;
+    padding: 62px 32px;
+    background: #fff;
+    border-radius: 17px;
+    transition: all linear .3s;
+}
+.counter_item:hover {
+    background: var(--brand_colo);
+}
+.counter_icon {
+    width: 74px;
+    height: 78px;
+    background: rgba(0, 128, 96, 0.10);
+    border-radius: 14px;
+    text-align: center;
+    line-height: 78px;
+    color: var(--brand_color);
+}
+.counter_item:hover .counter_icon {
+    background: #fff;
+    color: var(--brand_color);
+}
+.counter_text h2 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--Primary-Color);
+    margin-top: 20px;
+}
+.counter_text p {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: var(--poppins);
+    color: var(--Paragraph-Color);
+}
+.counter_item:hover .counter_text h2 {
+    color: #fff;
+}
+.counter_item:hover .counter_text p {
+    color: #fff;
+}
+/* --------------------------------  discover remember css part end ------------------------------------ */
+/* =============================== selected Destination css part start ================================== */
+#selected_destination {
+    padding-top: 149px;
+    padding-bottom: 140px;
+}
+
+.destination_one_text {
+    margin-top: 123px;
+}
+
+.common_destination_head h2 {
+    width: 507px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--Primary-Color);
+}
+
+.common_destination_head p {
+    width: 516px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--Paragraph-Color);
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.destination_one_button a {
+    width: 225px;
+    height: 56px;
+    background: var(--brand_color);
+    border-radius: 17px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: #fff;
+    transition: all linear .3s;
+}
+
+.destination_one_button a:hover {
+    background: none;
+    border: 1px solid var(--brand_color);
+    color: var(--brand_color);
+}
+
+.destination_one_photo {
+    width: 570px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.search_destination {
+    position: absolute;
+    top: 74%;
+    left: 0;
+}
+
+.search_destination ul li {
+    width: 350px;
+    height: 52px;
+    background: #fff;
+    padding: 12px 16px;
+    border-radius: 8px 8px 0 0;
+}
+
+.search_destination ul li span {
+    margin-right: 12px;
+    color: var(--brand_color);
+}
+
+.search_destination ul li input {
+    width: 220px;
+    border: none;
+    font-weight: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: #616161;
+}
+
+.search_destination ul li input::placeholder {
+    font-weight: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: #616161;
+}
+
+.search_destination .list_item {
+    width: 350px;
+    height: 42px;
+    border-radius: 8px;
+    padding: 10px 23px 10px 43px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_item p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--Open_Sans);
+    color: var(--Paragraph-Color);
+}
+
+.list_item:hover {
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.05);
+}
+
+.list_item:hover p {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--Open_Sans);
+}
+
+.destination_two_text {
+    margin-top: 101px;
+    margin-left: 78px;
+}
+
+.destination_two_photo {
+    width: 570px;
+    margin-bottom: 100px;
+}
+
+.destination_two_list {
+    display: flex;
+    gap: 15px;
+}
+
+.list_one ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list_one ul li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.list_one ul li span i {
+    color: var(--brand_color);
+    font-size: 16px;
+}
+
+.list_one ul li p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--Paragraph-Color);
+}
+.destination_accor{
+    width: 420px;
+}
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-item {
+    border: none;
+}
+.accordion-button::after {
+    margin-left: 11px;
+}
+.accordion-item{
+    background: rgba(0, 127, 95, 0.1);
+}
+.destination_accor .collapsed  .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 11px;
+    border: 2px solid var(--secundery_colo);
+    background: transparent;
+}
+.destination_accor .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--secundery_colo);
+    margin-right: 11px;
+    background: #007F5F;
+}
+.accor_taxt p{
+    width: 309px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--Open_Sans);
+    color: var(--secundery_colo);
+}
+.destination_three_photo {
+    width: 570px;
+    position: relative;
+}
+.destination_three_list {
+    position: absolute;
+    top: 67%;
+    left: 50px;
+}
+.destination_three_list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.destination_three_list ul .list_1 {
+    width: 232px;
+    height: 52px;
+    padding: 12px 25px 12px 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.08);
+}
+.destination_three_list ul .list_2 {
+    width: 244px;
+    height: 52px;
+    padding: 12px 25px 12px 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.08);
+    margin-left: 50px;
+}
+.destination_three_list ul .list_3 {
+    width: 310px;
+    height: 52px;
+    padding: 12px 20px 12px 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 12px 16px 0px rgba(0, 0, 0, 0.08);
+}
+.destination_three_list ul li p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--Open_Sans);
+    color: var(--Paragraph-Color);
+}
+/* -------------------------------- selected Destination css part end ------------------------------------ */
+/* =============================== Explore css part start ================================== */
+#explore{
+    padding-top: 158px;
+}
+.explore_head h2{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--prymary_colo);
+}
+.explore_head p{
+    width: 485px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--secundery_colo);
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.nav-tabs {
+    --bs-nav-tabs-border-color: none;
+}
+.nav-tabs {
+    --bs-nav-tabs-border-width:n;
+}
+.populer_nav{
+    margin-top: 94px;
+}
+.explore_slider_item{
+    width: 370px;
+    padding: 21px 20px 42px 21px;
+}
+.explore_slider_image{
+    width: 329px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.explore_slider_text h3{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: var(--poppins);
+    color: var(--prymary_colo);
+}
+.explore_slider_text p{
+    width: 325px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--secundery_colo);
+    line-height: 30px;
+}
+.explore_slider_location a{
+    display: flex;
+    gap: 14px;
+
+}
+.explore_slider_location a span{
+    width: 16px;
+    color: var(--secundery_colo);
+}
+.explore_slider_location a p{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--poppins);
+    color: var(--secundery_colo);
+}
+/* -------------------------------- Explore css part end ------------------------------------ */
+/* =============================== Testimonial css part start ================================== */
+#testimonial{
+    padding-top: 79px;
+}
+.testimonial_images{
+    width: 644px;
+    height: 774px;
+    
+}
+.img_one{
+    padding-top: 125px ;
+    padding-left: 435px;
+}
+.img_two{
+   padding-top: 329px;
+    padding-left: 294px;
+   
+}
+.img_three{
+    padding-top: -353px;
+}
+.img_four{
+    padding-top: -542px;
+    padding-left: 228px;
+}
+.img_five{
+    padding-top: -479px;
+    padding-left: 435px;
+}
+.testimonial_slider{
+    margin-top: 41px;
+}
+.testimonial_head h2{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--prymary_colo);
+    margin-top: 239px;
+}
+.testimonial_slider_taxt p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--secundery_colo);
+    line-height: 30px;
+    margin-top: 24px;
+}
+.testimonial_slider_taxt h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--prymary_colo);
+}
+/* -------------------------------- Testimonial css part end ------------------------------------ */
+/* =============================== Subscribe css part start ================================== */
+#subscribe_banner{
+    width: 1920px;
+    background: url(../images/Group\ 100.png);
+    margin-top: 238px;
+    margin-bottom: 149px;
+}
+.subscribe_text h2{
+    width: 659px;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: #fff;
+    text-align: center;
+    margin-top: 149px;
+}
+.subscribe_text p{
+    width: 565px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    
+}   
+.subscribe_input{
+    display: flex;
+    justify-content: space-between;
+    width: 770px;
+    background: #fff;
+    padding: 9px 11px 9px 25px;
+    border-radius: 17px;
+    margin-top: 52px;
+    margin-bottom: 144px;
+}
+.subscribe_input input{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: #9D9D9D;
+    border: none;
+}
+.subscribe_input a{
+   width: 159px;
+   height: 82px;
+   background: var(--brand_colo);
+   border-radius: 17px;
+   font-size: 16px;
+   font-weight: 600;
+   font-family: var(--poppins);
+   color: #fff;
+   line-height: 82px;
+   text-align: center;
+   border: 1px solid var(--brand_color);
+   transition: all linear.3s;
+}
+.subscribe_input a:hover{
+    background: black;
+    
+}
+/* -------------------------------- Subscribe css part end ------------------------------------ */
+/* =============================== footer css part start ================================== */
+#footer{
+    margin-bottom: 105px;
+}
+.footer_logo img{
+    width: 214px;
+    margin-bottom: 39px;
+}
+.media_logo{
+    display: flex;
+    gap: 40px;
+}
+.footer_taxt p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--secundery_colo);
+    line-height: 30px;
+    margin-top: 46px;
+} 
+.tour_taxt h2{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--prymary_colo);
+    margin-bottom: 30px;
+}
+.tour_taxt p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--secundery_colo);
+    line-height: 50px;
+}
+.Support_taxt h2{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--prymary_colo);
+    margin-bottom: 30px;
+}
+.Support_taxt p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--secundery_colo);
+    line-height: 50px;
+}
+.Useful_Pages_taxt h2{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--prymary_colo);
+    margin-bottom: 30px;
+}
+.Useful_Pages_taxt p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--poppins);
+    color: var(--secundery_colo);
+    line-height: 50px;
+}
+/* -------------------------------- footer css part end ------------------------------------ */
+
+/* =============================== selected Destination css part start ================================== */
+
+
+/* -------------------------------- selected Destination css part end ------------------------------------ */
+/* =============================== selected Destination css part start ================================== */
+
+
+/* -------------------------------- selected Destination css part end ------------------------------------ */
